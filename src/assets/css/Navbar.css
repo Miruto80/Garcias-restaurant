@@ -1,0 +1,22 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navbar {
+  background-color: #1D1C1A !important; /* marrón oscuro */
+}
+
+.navbar-nav .nav-link {
+  color: #fefefe !important;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #d4af37 !important; /* dorado */
+}
