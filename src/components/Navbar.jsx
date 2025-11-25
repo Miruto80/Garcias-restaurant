@@ -38,7 +38,7 @@ export default function Navbar() {
             <ul className="navbar-nav text-center">
               <li className="nav-item"><Link className="nav-link" to="/">INICIO</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/el-lugar">EL LUGAR</Link></li>
-              <li className="nav-item"><Link className="nav-link" to="/menu">MENÚ</Link></li>
+              <li className="nav-item"><Link className="nav-link" to="/Menu">MENÚ</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/reservas">RESERVAS</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/contacto">CONTACTO Y UBICACIÓN</Link></li>
             </ul>

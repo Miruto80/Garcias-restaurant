@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home.jsx";
-import Navbar from "../components/Navbar.jsx"; // asegúrate de tener este archivo
+import Navbar from "../components/Navbar.jsx";
 import ChatBot from "../components/ChatBot.jsx";
+import Menu from "../pages/Menu.jsx";
 
 function AppRoutes() {
   return (
@@ -9,6 +10,7 @@ function AppRoutes() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Menu" element={<Menu />} />
       </Routes>
       <ChatBot />
     </>

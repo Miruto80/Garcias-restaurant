@@ -1,0 +1,29 @@
+.menu-card {
+  background-color: #fefefe;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease;
+}
+
+.menu-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.menu-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #1D1C1A;
+}
+
+.menu-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.menu-card span {
+  font-weight: bold;
+  color: #d4af37;
+  font-size: 1rem;
+}

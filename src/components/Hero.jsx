@@ -8,7 +8,7 @@ export default function Hero() {
       <div className="hero-overlay">
         <div className="hero-content">
           <h1>GARCIA’S RESTAURANT & MARKET</h1>
-          <Link to="/gallery" className="hero-button">VER GALERÍA</Link>
+          <Link to="/Menu" className="hero-button">VER MENU</Link>
         </div>
       </div>
     </section>
