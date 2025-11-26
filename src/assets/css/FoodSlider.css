@@ -1,6 +1,16 @@
 .food-slider {
   max-width: 1200px;
-  margin: 40px auto;
+  margin: 60px auto;
+  padding: 0 20px;
+  overflow: hidden;
+}
+
+.food-slider-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #d4af37; /* dorado */
+  margin-bottom: 20px;
 }
 
 .food-slider img {

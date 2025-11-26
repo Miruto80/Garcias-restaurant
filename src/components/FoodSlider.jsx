@@ -4,7 +4,9 @@ import '@splidejs/react-splide/css';
 
 export default function FoodSlider() {
   return (
-    <div className="food-slider">
+    <section className="food-slider">
+      <h2 className="food-slider-title text-center">Platos destacados</h2>
+
       <Splide
         options={{
           type: 'loop',
@@ -25,21 +27,27 @@ export default function FoodSlider() {
           <img src="/img/Sliders/carne.png" alt="Plato destacado 1" />
         </SplideSlide>
         <SplideSlide>
-          <img src="/img/carne.png" alt="Plato destacado 2" />
+          <img src="/img/Sliders/pollo.png" alt="Plato destacado 2" />
         </SplideSlide>
         <SplideSlide>
-          <img src="/img/carne.png" alt="Plato destacado 3" />
+          <img src="/img/Sliders/pabellon.png" alt="Plato destacado 3" />
         </SplideSlide>
         <SplideSlide>
-          <img src="/img/carne.png" alt="Plato destacado 4" />
+          <img src="/img/Sliders/hambuerguesa.png" alt="Plato destacado 4" />
         </SplideSlide>
         <SplideSlide>
-          <img src="/img/comida5.png" alt="Plato destacado 5" />
+          <img src="/img/Sliders/pastelitos.png" alt="Plato destacado 5" />
         </SplideSlide>
         <SplideSlide>
-          <img src="/img/comida6.png" alt="Plato destacado 6" />
+          <img src="/img/Sliders/sopa.png" alt="Plato destacado 6" />
+        </SplideSlide>
+        <SplideSlide>
+          <img src="/img/Sliders/arroz.png" alt="Plato destacado 7" />
+        </SplideSlide>
+        <SplideSlide>
+          <img src="/img/Sliders/tajadas.png" alt="Plato destacado 8" />
         </SplideSlide>
       </Splide>
-    </div>
+    </section>
   );
 }
