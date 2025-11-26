@@ -1,0 +1,27 @@
+.menu-category {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.menu-overlay {
+  background-color: rgba(0, 0, 0, 0.4); /* oscurece la imagen */
+  padding: 40px 20px;
+  color: #fff;
+}
+
+.menu-category-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #d4af37; /* dorado */
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}

@@ -16,25 +16,10 @@
 .menu-subtitle {
   text-align: center;
   font-size: 1.4rem;
-  color: #555;
+  color: white;
   margin-bottom: 40px;
 }
 
 .menu-category {
   margin-bottom: 40px;
-}
-
-.menu-category h3 {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  color: #333;
-  border-bottom: 2px solid #d4af37;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-.menu-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
 }

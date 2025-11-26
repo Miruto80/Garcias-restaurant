@@ -1,104 +1,81 @@
 import React from 'react';
-import MenuCard from '../components/MenuCard.jsx';
 import '../assets/css/Menu.css';
-import { frituras, almuerzos, parrillas,sopas,contornos,arepas,combos,modernas,hamburguesas,patacones,cachapas } from '../assets/data/Menu.js';  
+import MenuCategory from '../components/MenuCategory.jsx';
+import {
+  frituras,
+  almuerzos,
+  parrillas,
+  sopas,
+  contornos,
+  arepas,
+  combos,
+  modernas,
+  hamburguesas,
+  patacones,
+  cachapas,
+} from '../assets/data/Menu.js';
 
 export default function Menu() {
   return (
     <section className="menu">
       <h1 className="menu-title">Nuestro Menú</h1>
       <h2 className="menu-subtitle">Cocina de estilo latinoamericana</h2>
-       <div className="menu-category">
-        <h2 className='text-center'>Frituras</h2>
-        <div className="menu-items">
-          {frituras.map((item, index) => (
-            <MenuCard key={index} {...item} />
-          ))}
-        </div>
-      </div>
-       <div className="menu-category">
-        <h2 className='text-center'>Almuerzos</h2>
-        <div className="menu-items">
-          {almuerzos.map((item, index) => (
-            <MenuCard key={index} {...item} />
-          ))}
-        </div>
-      </div>
-       <div className="menu-category">
-        <h2 className='text-center'>Parrillas</h2>
-        <div className="menu-items">
-          {parrillas.map((item, index) => (
-            <MenuCard key={index} {...item} />
-          ))}
-        </div>
-      </div>
-       <div className="menu-category">
-        <h2 className='text-center'>Sopas</h2>
-        <div className="menu-items">
-          {sopas.map((item, index) => (
-            <MenuCard key={index} {...item} />
-          ))}
-        </div>
-      </div>
-       <div className="menu-category">
-        <h2 className='text-center'>Contornos</h2>
-        <div className="menu-items">
-          {contornos.map((item, index) => (
-            <MenuCard key={index} {...item} />
-          ))}
-        </div>
-      </div>
-       <div className="menu-category">
-        <h2 className='text-center'>Arepas</h2>
-        <div className="menu-items">
-          {arepas.map((item, index) => (
-            <MenuCard key={index} {...item} />
-          ))}
-        </div>
-      </div>
-       <div className="menu-category">
-        <h2 className='text-center'>Combos</h2>
-        <div className="menu-items">
-          {combos.map((item, index) => (
-            <MenuCard key={index} {...item} />
-          ))}
-        </div>
-      </div>
-       <div className="menu-category">
-        <h2 className='text-center'>Modernas</h2>
-        <div className="menu-items">
-          {modernas.map((item, index) => (
-            <MenuCard key={index} {...item} />
-          ))}
-        </div>
-      </div>
-       <div className="menu-category">
-        <h2 className='text-center'>Hamburguesas</h2>
-        <div className="menu-items">
-          {hamburguesas.map((item, index) => (
-            <MenuCard key={index} {...item} />
-          ))}
-        </div>
-      </div>
-       <div className="menu-category">
-        <h2 className='text-center'>Patacones</h2>
-        <div className="menu-items">
-          {patacones.map((item, index) => (
-            <MenuCard key={index} {...item} />
-          ))}
-        </div>
-      </div>
-       <div className="menu-category">
-        <h2 className='text-center'>Cachapas</h2>
-        <div className="menu-items">
-          {cachapas.map((item, index) => (
-            <MenuCard key={index} {...item} />
-          ))}
-        </div>
-      </div>
 
-
-      {/* Repite para otras categorías */}
+      <MenuCategory
+        title="Frituras"
+        items={frituras}
+        backgroundImage="/img/Fondos/Hambuerguesa.png"
+      />
+      <MenuCategory
+        title="Almuerzos"
+        items={almuerzos}
+        backgroundImage="/img/Fondos/arroz.png"
+      />
+      <MenuCategory
+        title="Parrillas"
+        items={parrillas}
+        backgroundImage="/img/Fondos/carne_recortada.png"
+      />
+      <MenuCategory
+        title="Sopas"
+        items={sopas}
+        backgroundImage="/img/Fondos/sopa.png"
+      />
+      <MenuCategory
+        title="Contornos"
+        items={contornos}
+        backgroundImage="/img/Fondos/contornos.png"
+      />
+      <MenuCategory
+        title="Arepas"
+        items={arepas}
+        backgroundImage="/img/Fondos/arepas.png"
+      />
+      <MenuCategory
+        title="Combos"
+        items={combos}
+        backgroundImage="/img/Fondos/combos.png"
+      />
+      <MenuCategory
+        title="Modernas"
+        items={modernas}
+        backgroundImage="/img/Fondos/modernas.png"
+      />
+      <MenuCategory
+        title="Hamburguesas"
+        items={hamburguesas}
+        backgroundImage="/img/Fondos/hamburguesas.png"
+      />
+      <MenuCategory
+        title="Patacones"
+        items={patacones}
+        backgroundImage="/img/Fondos/patacones.png"
+      />
+      <MenuCategory
+        title="Cachapas"
+        items={cachapas}
+        backgroundImage="/img/Fondos/cachapas.png"
+      />
     </section>
   );
 }
