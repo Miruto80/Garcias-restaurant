@@ -1,0 +1,11 @@
+.food-slider {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+.food-slider img {
+  width: 100%;
+  height: 220px; /* ajusta según tus imágenes */
+  object-fit: cover; /* recorta para que todas se vean uniformes */
+  border-radius: 8px;
+}
