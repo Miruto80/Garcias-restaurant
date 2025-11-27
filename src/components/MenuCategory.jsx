@@ -2,9 +2,10 @@ import React from 'react';
 import MenuCard from './MenuCard.jsx';
 import '../assets/css/MenuCategory.css';
 
-export default function MenuCategory({ title, items, backgroundImage }) {
+export default function MenuCategory({id, title, items, backgroundImage }) {
   return (
     <div
+      id={id}
       className="menu-category"
       style={{
         backgroundImage: `url(${backgroundImage})`,

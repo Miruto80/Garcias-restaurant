@@ -1,29 +1,43 @@
 .menu-card {
-  background-color: #fefefe;
-  border: 1px solid #ddd;
-  padding: 20px;
-  border-radius: 8px;
-  transition: box-shadow 0.3s ease;
+  background: linear-gradient(135deg, #ffffff, #f9f9f9); /* fondo elegante */
+  border: 1px solid rgba(0,0,0,0.05);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu-card:hover {
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.12);
 }
 
 .menu-card h4 {
-  font-size: 1.2rem;
-  margin-bottom: 8px;
+  font-size: 1.3rem;
+  margin-bottom: 6px;
   color: #1D1C1A;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 6px;
 }
 
 .menu-card p {
   font-size: 0.95rem;
-  color: #666;
-  margin-bottom: 10px;
+  color: #555;
+  margin: 10px 0;
+  line-height: 1.4;
 }
 
 .menu-card span {
+  align-self: flex-end;
   font-weight: bold;
-  color: #d4af37;
-  font-size: 1rem;
+  color: #d4af37; /* dorado */
+  font-size: 1.1rem;
+  background: rgba(212, 175, 55, 0.1);
+  padding: 6px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
 }
