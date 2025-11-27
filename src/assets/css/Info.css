@@ -1,0 +1,14 @@
+#el-restaurante h1 {
+  letter-spacing: 2px;
+}
+
+#el-restaurante .bg-black {
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease;
+}
+
+#el-restaurante .bg-black:hover {
+  transform: translateY(-4px);
+  border-color: #ffc107;
+}
