@@ -1,13 +1,8 @@
-.food-slider {
-  max-width: 1200px;
-  margin: 60px auto;
-  padding: 0 20px;
-  overflow: hidden;
-}
-
-.food-slider img {
-  width: 100%;
-  height: 220px; /* ajusta según tus imágenes */
-  object-fit: cover; /* recorta para que todas se vean uniformes */
-  border-radius: 8px;
+.food-slider .splide__slide img {
+  width: 100%;          /* que ocupe todo el ancho del slide */
+  height: 500px;        /* altura uniforme, ajusta a tu gusto */
+  object-fit: cover;    /* recorta la imagen para llenar el espacio sin deformarla */
+  border-radius: 10px; 
+  margin-top: 15px; /* opcional: bordes redondeados */
+  margin-bottom: 15px; /* opcional: bordes redondeados */
 }

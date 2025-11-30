@@ -1,6 +1,7 @@
 import React from 'react';
 import { Splide, SplideSlide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
+import '../assets/css/FoodSlider.css';
 
 export default function FoodSlider() {
   return (
