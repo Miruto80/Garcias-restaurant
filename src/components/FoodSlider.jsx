@@ -5,7 +5,6 @@ import '@splidejs/react-splide/css';
 export default function FoodSlider() {
   return (
     <section className="food-slider">
-      <h2 className="text-center food-slider-title">Platos destacados</h2>
 
       <Splide
         options={{
