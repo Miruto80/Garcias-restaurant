@@ -30,7 +30,7 @@ export default function MenuFilter() {
     <>
       {/* Botón móvil: fijo abajo a la izquierda */}
       <button
-        className="btn btn-primary position-fixed bottom-0 start-0 m-3 d-lg-none"
+        className="btn btn-naranja position-fixed bottom-0 start-0 m-3 d-lg-none"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#categoryFilterMobile"
