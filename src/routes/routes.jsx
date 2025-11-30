@@ -16,7 +16,9 @@ function AppRoutes() {
         <Route path="/Menu" element={<Menu />} />
       </Routes>
       <ChatBot />
+      <div id="contacto">
       <Footer />
+      </div>
     </>
   );
 }

@@ -8,9 +8,13 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <Info />
+        <div id="el-lugar">
+        <Info />
+      </div>
       <FoodSlider />
-      <ReservationSection />
+      <div id="reservas">
+        <ReservationSection />
+      </div>
     </>
   );
 }
