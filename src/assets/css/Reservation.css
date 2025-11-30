@@ -14,7 +14,7 @@
 
 .reservation-form h2 {
   font-size: 2rem;
-  color: #d4af37;
+  color: white;
   margin-bottom: 20px;
 }
 
@@ -43,7 +43,7 @@
 
 
 .reservation-form button {
-  background-color: #d4af37;
+  background-color: white;
   color: #1d1c1a;
   padding: 12px;
   border: none;
