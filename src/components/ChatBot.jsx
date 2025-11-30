@@ -167,7 +167,7 @@ const ChatBot = () => {
     }}>
       {open ? (
         <>
-          <div style={{ background: "#d4af37", color: "#fff", padding: 12, width: "100%", cursor: "pointer" }} onClick={() => setOpen(false)}>
+          <div style={{ background: "#531615", color: "#fff", padding: 12, width: "100%", cursor: "pointer" }} onClick={() => setOpen(false)}>
             ChatBot
             <span style={{ float: "right", fontWeight: "bold" }}>×</span>
           </div>
@@ -196,11 +196,11 @@ const ChatBot = () => {
               placeholder="Type your question..."
               style={{ flex: 1, border: "none", padding: 10, outline: "none" }}
             />
-            <button type="submit" style={{ background: "#d4af37", color: "#fff", border: "none", padding: "0 16px", cursor: "pointer" }}>Send</button>
+            <button type="submit" style={{ background: "#531615", color: "#fff", border: "none", padding: "0 16px", cursor: "pointer" }}>Send</button>
           </form>
         </>
       ) : (
-        <button onClick={() => setOpen(true)} style={{ width: 60, height: 60, background: "#7b7b7b", color: "#fff", border: "none", fontSize: 28, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", padding: 0 }}>
+        <button onClick={() => setOpen(true)} style={{ width: 60, height: 60, background: "#000", color: "#fff", border: "none", fontSize: 28, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", padding: 0 }}>
          <i class="fa-solid fa-message"></i>
         </button>
       )}
