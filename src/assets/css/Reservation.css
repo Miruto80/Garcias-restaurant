@@ -33,11 +33,14 @@
 
 .reservation-form input,
 .reservation-form select {
+  width: 100%;       /* fuerza ancho completo */
+  box-sizing: border-box; /* incluye padding y border dentro del width */
   padding: 10px;
   border-radius: 6px;
   border: none;
   font-size: 1rem;
 }
+
 
 .reservation-form button {
   background-color: #d4af37;
