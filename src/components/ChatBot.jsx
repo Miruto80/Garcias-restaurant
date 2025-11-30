@@ -201,7 +201,7 @@ const ChatBot = () => {
         </>
       ) : (
         <button onClick={() => setOpen(true)} style={{ width: 60, height: 60, background: "#000", color: "#fff", border: "none", fontSize: 28, cursor: "pointer", display: "flex", alignItems: "center", justifyContent: "center", padding: 0 }}>
-         <i class="fa-solid fa-message"></i>
+         <i className="fa-solid fa-message"></i>
         </button>
       )}
     </div>
