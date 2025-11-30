@@ -51,9 +51,24 @@ export default function Navbar() {
             <ul className="navbar-nav text-center">
               <li className="nav-item"><Link className="nav-link" to="/" onClick={handleNavLinkClick}>INICIO</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/Menu" onClick={handleNavLinkClick}>MENÚ</Link></li>
-              <a className="nav-link" href="/#el-lugar" onClick={handleNavLinkClick}>EL LUGAR</a>
-<a className="nav-link" href="/#reservas" onClick={handleNavLinkClick}>RESERVAS</a>
-<a className="nav-link" href="/#contacto" onClick={handleNavLinkClick}>CONTACTO</a>
+             <li className="nav-item">
+  <Link className="nav-link" to="/#el-lugar" onClick={handleNavLinkClick}>
+    EL LUGAR
+  </Link>
+</li>
+
+<li className="nav-item">
+  <Link className="nav-link" to="/#reservas" onClick={handleNavLinkClick}>
+    RESERVAS
+  </Link>
+</li>
+
+<li className="nav-item">
+  <Link className="nav-link" to="/#contacto" onClick={handleNavLinkClick}>
+    CONTACTO
+  </Link>
+</li>
+
             </ul>
           </div>
         </div>
