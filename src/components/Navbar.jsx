@@ -40,7 +40,7 @@ export default function Navbar() {
               <li className="nav-item"><Link className="nav-link" to="/el-lugar">EL LUGAR</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/Menu">MENÚ</Link></li>
               <li className="nav-item"><Link className="nav-link" to="/reservas">RESERVAS</Link></li>
-              <li className="nav-item"><Link className="nav-link" to="/contacto">CONTACTO Y UBICACIÓN</Link></li>
+              <li className="nav-item"><Link className="nav-link" to="/contacto">CONTACTO</Link></li>
             </ul>
           </div>
         </div>

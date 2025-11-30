@@ -4,11 +4,13 @@ import Navbar from "../components/Navbar.jsx";
 import ChatBot from "../components/ChatBot.jsx";
 import Menu from "../pages/Menu.jsx";
 import Footer from "../components/Footer.jsx";
+import ScrollToTop from "../components/ScrollToTop.jsx";
 
 function AppRoutes() {
   return (
     <>
       <Navbar />
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Menu" element={<Menu />} />
