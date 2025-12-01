@@ -11,14 +11,25 @@ export default function ReservationSection() {
 
   const message = `Hola, quiero reservar una mesa para ${groupSize} personas el ${date} a las ${time}.`;
   const encodedMessage = encodeURIComponent(message);
+  const phone = "16824804614";
 
-  const phone = "16824804614"; // SIN símbolos
+  const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
-  const url = `https://wa.me/${phone}?text=${encodedMessage}`;
+  // Móvil usa wa.me (no usar _blank)
+  const mobileURL = `https://wa.me/${phone}?text=${encodedMessage}`;
 
-  // Más confiable que window.open en WhatsApp Business
-  window.location.href = url;
+  // Escritorio usa api.whatsapp.com (sí usar _blank)
+  const desktopURL = `https://api.whatsapp.com/send?phone=${phone}&text=${encodedMessage}`;
+
+  if (isMobile) {
+    // Abre WhatsApp app directamente
+    window.location.href = mobileURL;
+  } else {
+    // Abre WhatsApp Web en pestaña nueva sin sacar al usuario de tu web
+    window.open(desktopURL, "_blank");
+  }
 };
+
 
 
 
