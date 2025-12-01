@@ -25,7 +25,7 @@ export default function Navbar() {
           <div className="d-flex w-100 justify-content-between align-items-center">
             <Link className="navbar-brand mx-lg-auto" to="/">
               <img
-                src="/img/Logos/garcias-101.png"
+                src="/img/Logos/garcias-101.webp"
                 alt="Garcia's Logo"
                 height="70"
                 className="d-inline-block align-text-top"

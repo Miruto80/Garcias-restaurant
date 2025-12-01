@@ -1,6 +1,6 @@
 .hero {
   position: relative;
-  background-image: url('/img/hero.png'); /* cambia por tu imagen */
+  background-image: url('/img/hero.webp'); /* cambia por tu imagen */
   background-size: cover;
   background-position: center;
   height: 70vh; /* menos alto que full screen */

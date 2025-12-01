@@ -24,28 +24,28 @@ export default function FoodSlider() {
         }}
       >
         <SplideSlide>
-          <img src="/img/Sliders/carne.png" alt="Plato destacado 1" />
+          <img src="/img/Sliders/carne.webp" alt="Plato destacado 1" />
         </SplideSlide>
         <SplideSlide>
-          <img src="/img/Sliders/pollo.png" alt="Plato destacado 2" />
+          <img src="/img/Sliders/pollo.webp" alt="Plato destacado 2" />
         </SplideSlide>
         <SplideSlide>
-          <img src="/img/Sliders/pabellon.png" alt="Plato destacado 3" />
+          <img src="/img/Sliders/pabellon.webp" alt="Plato destacado 3" />
         </SplideSlide>
         <SplideSlide>
-          <img src="/img/Sliders/hambuerguesa.png" alt="Plato destacado 4" />
+          <img src="/img/Sliders/hambuerguesa.webp" alt="Plato destacado 4" />
         </SplideSlide>
         <SplideSlide>
-          <img src="/img/Sliders/pastelitos.png" alt="Plato destacado 5" />
+          <img src="/img/Sliders/pastelitos.webp" alt="Plato destacado 5" />
         </SplideSlide>
         <SplideSlide>
-          <img src="/img/Sliders/sopa.png" alt="Plato destacado 6" />
+          <img src="/img/Sliders/sopa.webp" alt="Plato destacado 6" />
         </SplideSlide>
         <SplideSlide>
-          <img src="/img/Sliders/arroz.png" alt="Plato destacado 7" />
+          <img src="/img/Sliders/arroz.webp" alt="Plato destacado 7" />
         </SplideSlide>
         <SplideSlide>
-          <img src="/img/Sliders/tajadas.png" alt="Plato destacado 8" />
+          <img src="/img/Sliders/tajadas.webp" alt="Plato destacado 8" />
         </SplideSlide>
       </Splide>
     </section>
