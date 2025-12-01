@@ -9,6 +9,9 @@ function Footer() {
             <a target="_blank" href="https://www.instagram.com/garciasrestaurant_market" aria-label="Instagram">
                 <i className="fa-brands fa-instagram"></i>
             </a>
+            <a target="_blank" href="https://wa.me/16824804614" aria-label="WhatsApp">
+                <i className="fa-brands fa-whatsapp"></i>
+            </a>
             <span className="footer-contact ms-3"><i className="fa-solid fa-phone me-1"></i><a href="tel:682-480-4614"> 682-480-4614 </a></span>
             <span className="footer-contact ms-3"><i className="fa-solid fa-envelope me-1"></i>Garciaslrestaurant@gmail.com</span>
         </div>
