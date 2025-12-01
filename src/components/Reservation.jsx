@@ -6,12 +6,21 @@ export default function ReservationSection() {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const message = `Hola, quiero reservar una mesa para ${groupSize} personas el ${date} a las ${time}.`;
-    const encodedMessage = encodeURIComponent(message);
-    window.open(`https://wa.me/584241234567?text=${encodedMessage}`, '_blank'); // Reemplaza con tu número
-  };
+ const handleSubmit = (e) => {
+  e.preventDefault();
+
+  const message = `Hola, quiero reservar una mesa para ${groupSize} personas el ${date} a las ${time}.`;
+  const encodedMessage = encodeURIComponent(message);
+
+  const phone = "16824804614"; // SIN símbolos
+
+  const url = `https://wa.me/${phone}?text=${encodedMessage}`;
+
+  // Más confiable que window.open en WhatsApp Business
+  window.location.href = url;
+};
+
+
 
   return (
     <section className="reservation-section">
