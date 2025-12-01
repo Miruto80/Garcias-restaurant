@@ -5,6 +5,7 @@ import Hero from '../components/Hero.jsx'
 import FoodSlider from '../components/FoodSlider.jsx';
 import ReservationSection from '../components/Reservation.jsx';
 import Info from '../components/Info.jsx';
+import SEO from '../components/SEO.jsx';
 
 export default function Home() {
    const { hash } = useLocation();
@@ -21,6 +22,12 @@ export default function Home() {
   }, [hash]);
   return (
     <>
+      <SEO
+        title="Inicio"
+        description="Bienvenido a Garcia's Restaurant — arepas, parrillas y auténticos sabores venezolanos en Dallas. Reserva ahora."
+        url="https://tusitio.com/"
+        image="/img/Logos/garcias-101.webp"
+      />
       <Hero />
         <div id="el-lugar">
         <Info />

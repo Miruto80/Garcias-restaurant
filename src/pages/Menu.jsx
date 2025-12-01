@@ -1,5 +1,6 @@
 import React from 'react';
 import '../assets/css/Menu.css';
+import SEO from '../components/SEO.jsx';
 import MenuCategory from '../components/MenuCategory.jsx';
 import MenuFilter from '../components/MenuFilter.jsx';
 import {
@@ -10,6 +11,12 @@ import {
 export default function Menu() {
   return (
     <div className="container-fluid">
+      <SEO
+        title="Menú"
+        description="Explora el menú de Garcia's Restaurant: arepas, parrillas, frituras, sopas y más. Calidad casera y sabores venezolanos en Dallas."
+        url="https://tusitio.com/menu"
+        image="/img/Logos/garcias-101.webp"
+      />
       <div className="row">
         {/* Sidebar (solo desktop, el componente maneja visibilidad) */}
         <div className="col-lg-3">
