@@ -14,6 +14,37 @@ export default function Navbar() {
     // Obtener instancia existente o crear una nueva y ocultarla
     const bsCollapse = Collapse.getInstance(navbarEl) || new Collapse(navbarEl);
     bsCollapse.hide();
+    // Actualizar aria-expanded del toggler (fallback)
+    const toggler = document.querySelector('[data-toggle-for="navbarNav"]') || document.querySelector('.navbar-toggler');
+    if (toggler) toggler.setAttribute('aria-expanded', 'false');
+  };
+
+  const handleToggleClick = () => {
+    const navbarEl = document.getElementById('navbarNav');
+    if (!navbarEl) return;
+
+    try {
+      const bsCollapse = Collapse.getInstance(navbarEl);
+      if (bsCollapse && typeof bsCollapse.toggle === 'function') {
+        bsCollapse.toggle();
+      } else {
+        const newInst = new Collapse(navbarEl);
+        if (newInst && typeof newInst.toggle === 'function') newInst.toggle();
+      }
+    } catch {
+      // fallthrough to manual class toggle
+      if (navbarEl.classList.contains('show')) {
+        navbarEl.classList.remove('show');
+      } else {
+        navbarEl.classList.add('show');
+      }
+    }
+
+    // Update toggler aria after a short delay to let classes settle
+    const toggler = document.querySelector('[data-toggle-for="navbarNav"]') || document.querySelector('.navbar-toggler');
+    setTimeout(() => {
+      if (toggler) toggler.setAttribute('aria-expanded', navbarEl.classList.contains('show') ? 'true' : 'false');
+    }, 50);
   };
 
   return (
@@ -36,11 +67,11 @@ export default function Navbar() {
             <button
               className="navbar-toggler d-lg-none"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
+              data-toggle-for="navbarNav"
               aria-controls="navbarNav"
               aria-expanded="false"
               aria-label="Toggle navigation"
+              onClick={handleToggleClick}
             >
               <span className="navbar-toggler-icon"></span>
             </button>

@@ -20,10 +20,38 @@ const categories = [
 export default function MenuFilter() {
      const handleLinkClick = () => {
     const collapseEl = document.getElementById('categoryFilterMobile');
-    if (collapseEl) {
-      const bsCollapse = Collapse.getInstance(collapseEl) || new Collapse(collapseEl);
-      bsCollapse.hide();
+    if (!collapseEl) return;
+
+    // Try to use Bootstrap's Collapse API if available
+    try {
+      const bsCollapse = (Collapse && Collapse.getInstance) ? Collapse.getInstance(collapseEl) : null;
+      if (bsCollapse) {
+        bsCollapse.hide();
+        return;
+      }
+      // If no instance, attempt to create one and hide
+      if (Collapse) {
+        const newInst = new Collapse(collapseEl);
+        if (newInst && typeof newInst.hide === 'function') {
+          newInst.hide();
+          return;
+        }
+      }
+    } catch {
+      // fallthrough to manual fallback
     }
+
+    // Fallback: remove the Bootstrap 'show' class and update toggler aria
+    collapseEl.classList.remove('show');
+    collapseEl.classList.add('collapsing');
+    // Ensure any inline height is cleared after the transition-ish delay
+    setTimeout(() => {
+      collapseEl.classList.remove('collapsing');
+      collapseEl.style.height = '';
+    }, 300);
+
+    const toggler = document.querySelector('[data-bs-target="#categoryFilterMobile"]');
+    if (toggler) toggler.setAttribute('aria-expanded', 'false');
   };
 
   return (
@@ -48,10 +76,9 @@ export default function MenuFilter() {
             <button
               className="btn btn-sm btn-outline-secondary z-3"
               type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#categoryFilterMobile"
+              onClick={handleLinkClick}
             >
-              Cerrar
+              X
             </button>
           </div>
           <div className="card-body p-0">
