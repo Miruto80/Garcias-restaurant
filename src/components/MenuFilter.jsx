@@ -78,8 +78,8 @@ export default function MenuFilter() {
               type="button"
               onClick={handleLinkClick}
             >
-              X
-            </button>
+              <i className="fa-solid fa-x"></i>            
+           </button>
           </div>
           <div className="card-body p-0">
             <ul className="list-group list-group-flush">

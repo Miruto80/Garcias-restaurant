@@ -84,7 +84,7 @@ export default function Navbar() {
               <li className="nav-item"><Link className="nav-link" to="/Menu" onClick={handleNavLinkClick}>MENÚ</Link></li>
              <li className="nav-item">
   <Link className="nav-link" to="/#el-lugar" onClick={handleNavLinkClick}>
-    EL LUGAR
+    NOSOTROS
   </Link>
 </li>
 
