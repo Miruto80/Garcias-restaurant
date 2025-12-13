@@ -34,7 +34,7 @@ export default function Menu() {
             <MenuCategory id="arepas" title="Arepas" items={arepas} backgroundImage="/img/Fondos/arepas.webp" />
             <MenuCategory id="combos" title="Combos" items={combos} backgroundImage="/img/Fondos/combos.webp" />
             <MenuCategory id="modernas" title="Modernas" items={modernas} backgroundImage="/img/Fondos/modernas.webp" />
-            <MenuCategory id="hamburguesas" title="Hamburguesas" items={hamburguesas} backgroundImage="/img/Fondos/hamburguesas.webp" />
+            <MenuCategory id="hamburguesas" title="Hamburguesas" items={hamburguesas} backgroundImage="/img/Fondos/Hambuerguesa.webp" />
             <MenuCategory id="patacones" title="Patacones" items={patacones} backgroundImage="/img/Fondos/patacones.webp" />
             <MenuCategory id="cachapas" title="Cachapas" items={cachapas} backgroundImage="/img/Fondos/cachapas.webp" />
           </section>
