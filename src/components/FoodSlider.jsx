@@ -7,6 +7,10 @@ export default function FoodSlider() {
   return (
     <section className="food-slider">
 
+       <div className="container text-center">
+    <h2 className="display-6 m-2 fw-bold text-uppercase text-white">Destacados</h2>
+  </div>
+
       <Splide
         options={{
           type: 'loop',

@@ -6,6 +6,8 @@ import FoodSlider from '../components/FoodSlider.jsx';
 import ReservationSection from '../components/Reservation.jsx';
 import Info from '../components/Info.jsx';
 import SEO from '../components/SEO.jsx';
+import promociones from '../assets/data/Promos.js';
+import PromoSlider from '../components/PromoSlider.jsx';
 
 export default function Home() {
    const { hash } = useLocation();
@@ -32,6 +34,7 @@ export default function Home() {
         <div id="el-lugar">
         <Info />
       </div>
+      <PromoSlider promociones={promociones} />
       <FoodSlider />
       <div id="reservas">
         <ReservationSection />
