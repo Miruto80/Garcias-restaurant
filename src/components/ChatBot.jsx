@@ -1,5 +1,26 @@
 import React, { useState } from "react";
 
+const contactKeywords = [
+  "contacto",
+  "reservar",
+  "reserva",
+  "pedido",
+  "pedidos",
+  "orden",
+  "ordenar",
+  "comprar",
+  "delivery",
+  "domicilio",
+  "llevar",
+  "take out",
+  "pickup",
+  "whatsapp",
+  "telefono",
+  "teléfono",
+  "llamar"
+];
+
+
 const qaPairs = [
  {
     keywords: ["horario", "horarios", "hora", "abren", "cierran", "tiempo"],
@@ -123,7 +144,7 @@ function getAnswer(userQuestion) {
   const matches = qaPairs.filter(qap => qap.keywords.some(kw => lower.includes(kw)));
 
   if (matches.length === 0) {
-    return ["Lo siento, no tengo una respuesta para eso. Por favor, intenta con otra pregunta o escribe contacto para hablar con nosotros directamente."];
+    return ["Lo siento, no tengo una respuesta para eso. Por favor, intenta con otra pregunta o escribe <b>contacto</b> para hablar con nosotros directamente."];
   }
 
   return matches.map(m => m.answer);
@@ -144,17 +165,22 @@ const ChatBot = () => {
     const lowerInput = input.toLowerCase();
 
     // Detect "contact"
-    if (lowerInput.includes("contacto")) {
-      const botMsg = {
-        from: "bot",
-         text: `<a href="https://wa.me/16824804614" target="_blank">Haz click para ir a nuestro WhatsApp</a>`
-      };
+    // Detect contact / orders / reservations
+if (contactKeywords.some(keyword => lowerInput.includes(keyword))) {
+  const botMsg = {
+    from: "bot",
+    text: `
+      Para reservas, pedidos o ayuda escríbenos directamente por WhatsApp
+      <a href="https://wa.me/16824804614" target="_blank" style="color:#25D366;font-weight:bold;">
+        Haz click aquí para chatear por WhatsApp
+      </a>
+    `
+  };
 
-      setMessages([...messages, userMsg, botMsg]);
-      setInput("");
-      return;
-    }
-
+  setMessages([...messages, userMsg, botMsg]);
+  setInput("");
+  return;
+}
     // Get AI answers
     const answers = getAnswer(input);
     const botMsgs = answers.map(ans => ({ from: "bot", text: ans }));
