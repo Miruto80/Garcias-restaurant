@@ -2,7 +2,7 @@
 const promociones = [
   {
     titulo: "De lunes a jueves",
-    descripcion: "Piezas en $1.80 Para empanadas y pasteles",
+    descripcion: "Piezas en $1.80 Para empanadas pasteles y tequeños",
     imagen: "/img/Fondos/empanadas.webp"
   },
   {
