@@ -27,7 +27,7 @@ export default function Home() {
       <SEO
         title="Inicio"
         description="Bienvenido a Garcia's Restaurant — arepas, parrillas y auténticos sabores venezolanos en Dallas. Reserva ahora."
-        url="https://tusitio.com/"
+        url="https://www.garciasrestaurantmarket.com/"
         image="/img/Logos/garcias-101.webp"
       />
       <Hero />
