@@ -3,6 +3,7 @@ import { AnimatePresence } from 'framer-motion';
 import Home from "../pages/Home.jsx";
 import Navbar from "../components/Navbar.jsx";
 import ChatBot from "../components/ChatBot.jsx";
+import OrderButton from "../components/OrderButton.jsx";
 import Menu from "../pages/Menu.jsx";
 import Footer from "../components/Footer.jsx";
 import ScrollToTop from "../components/ScrollToTop.jsx";
@@ -14,15 +15,16 @@ function AppRoutes() {
     <>
       <Navbar />
       <ScrollToTop />
-    <AnimatePresence mode="wait">
-      <Routes location={location} key={location.pathname}>
-        <Route path="/" element={<FadeWrapper><Home /></FadeWrapper>} />
-        <Route path="/Menu" element={<FadeWrapper><Menu /></FadeWrapper>} />
-      </Routes>
-    </AnimatePresence>
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          <Route path="/" element={<FadeWrapper><Home /></FadeWrapper>} />
+          <Route path="/Menu" element={<FadeWrapper><Menu /></FadeWrapper>} />
+        </Routes>
+      </AnimatePresence>
+      <OrderButton />
       <ChatBot />
       <div id="contacto">
-      <Footer />
+        <Footer />
       </div>
     </>
   );
