@@ -3,7 +3,7 @@ import { AnimatePresence } from 'framer-motion';
 import Home from "../pages/Home.jsx";
 import Navbar from "../components/Navbar.jsx";
 import ChatBot from "../components/ChatBot.jsx";
-import OrderButton from "../components/OrderButton.jsx";
+// import OrderButton from "../components/OrderButton.jsx";
 import Menu from "../pages/Menu.jsx";
 import Footer from "../components/Footer.jsx";
 import ScrollToTop from "../components/ScrollToTop.jsx";
@@ -21,7 +21,7 @@ function AppRoutes() {
           <Route path="/Menu" element={<FadeWrapper><Menu /></FadeWrapper>} />
         </Routes>
       </AnimatePresence>
-      <OrderButton />
+      {/* <OrderButton /> */}
       <ChatBot />
       <div id="contacto">
         <Footer />
